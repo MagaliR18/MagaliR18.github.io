@@ -12,6 +12,7 @@
        font-family:arial;
        
     }
+   
      
    table{
      border:2px solid blue;
@@ -32,23 +33,228 @@
    <h1> <strong>FAIRLYTAIL </strong> </h1>
   
 <p><a target =_blank href="https://www.crunchyroll.com/fairy-tail"> link</a></p>
-   <img width=70% src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9AzlC5URd_bPgWseuEzsjw8S8lIwCy0EmpZjnkrPgVVDMuy_T">
+   <img width=60% src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9AzlC5URd_bPgWseuEzsjw8S8lIwCy0EmpZjnkrPgVVDMuy_T">
    
+   <p id="caption"></p>
+   <hr>
+  <p> <button onclick = "myfunction()"> Hit this buttton </button> </p> 
+   
+   <script> 
+   function myfunction() {
+     document.getElementById("caption").innerHTML = "FairlyTail";
+     
+   }
+   </script>
+ 
+
+  <table border="">
+    <tr>
+      <td id="topleft">-</td>
+      <td id="topmiddle">-</td>
+      <td id="topright">-</td>
+      
+      
+    </tr>
+    
+    
+  
+    <tr>
+      <td id=middleleft>-</td>
+      <td id=middle>-</td>
+      <td id=middleright>-</td>
+    </tr>
+   <tr> 
+     <td id=bottomleft>-</td>
+     <td id=bottommiddle>-</td>
+     <td id=bottomright>-</td>
+   </tr>
+  
+  </table>
+  
+  
+  <p> <button onclick="t1_toX()">Top Left to X </button>
+
+  <script>
+    function t1_toX(){
+      var dontmove = document.getElementById("topleft").innerHTML;
+      if (dontmove == "X" ||dontmove == "O") {
+        return;
+      }
+      document.getElementById("topleft").innerHTML = "X";
+    }
+  </script>
+  <button onclick="t1_tox()">Top Left to O</button>
+   <script>
+     function t1_tox(){
+       var dontmove = document.getElementById("topleft").innerHTML;
+      if (dontmove == "X" ||dontmove == "O") {
+        return;
+       document.getElementById("topleft").innerHTML="O"
+     }
+   </script>
+   </p>
+   
+  
+  
+  <p><button onclick="t2_toX()">Top Middle to O</button>
+   <script>
+     function t2_toX(){
+       var dontmove = document.getElementById("topmiddle").innerHTML;
+      if (dontmove == "X" ||dontmove == "O") {
+        return;
+        document.getElementById("topmiddle").innerHTML="O"
+     }
+   </script>
+   
+   <button onclick="t2_tox()">Top Middle to X</button>
+   <script>
+     function t2_tox(){
+       
+       var dontmove = document.getElementById("topmiddle").innerHTML;
+      if (dontmove == "X" ||dontmove == "O") {
+        return;
+        document.getElementById("topmiddle").innerHTML="X"
+     }
+   </script>
+   </p>
+   
+   <p>
+   <button onclick="t3_toX()">Top Right to X</button>
+   <script>
+     function t3_toX(){
+       var dontmove = document.getElementById("topright").innerHTML;
+      if (dontmove == "X" ||dontmove == "O") {
+        return;
+        document.getElementById("topright").innerHTML="X"
+     }
+   </script>
+
+ <button onclick="t3_tox()">Top Right to O</button>
+   <script>
+     function t3_tox(){
+      var dontmove = document.getElementById("topright").innerHTML;
+      if (dontmove == "X" ||dontmove == "O") {
+        return; document.getElementById("topright").innerHTML="O"
+     }
+   </script>
+ </p>
+ 
+ <p>
+   <button onclick="t4_toX()"> Middle left to O</button>
+   <script>
+     function t4_toX(){
+       document.getElementById("middleleft").innerHTML="O"
+     }
+   </script>
+   
+   <button onclick="t4_tox()">Middle Left to X</button>
+   <script>
+     function t4_tox(){
+       document.getElementById("middleleft").innerHTML="X"
+     }
+   </script>
+   </p>
+  
+  
+   <p>
+   <button onclick="t5_toX()"> Middle to O</button>
+   <script>
+     function t5_toX(){
+       document.getElementById("middle").innerHTML="O"
+     }
+   </script>
+  
+   <button onclick="t5_tox()"> Middle to X</button>
+   <script>
+     function t5_tox(){
+       document.getElementById("middle").innerHTML="X"
+     }
+   </script>
+   </p>
+   
+   
+   <p>
+   <button onclick="t6_toX()"> Middle Right to X</button>
+   <script>
+     function t6_toX(){
+       document.getElementById("middleright").innerHTML="X"
+     }
+   </script>
+   
+   <button onclick="t6_tox()">Middle Right to O</button>
+   <script>
+     function t6_tox(){
+       document.getElementById("middleright").innerHTML="O"
+     }
+   </script>
+   </p>
+ 
+ 
+   <p>
+   <button onclick="t7_toX()">Bottom Left to O</button>
+   <script>
+     function t7_toX(){
+       document.getElementById("bottomleft").innerHTML="O"
+     }
+   </script>
+   
+    <button onclick="t7_tox()">Bottom Left to X</button>
+   <script>
+     function t7_tox(){
+       document.getElementById("bottomleft").innerHTML="X"
+     }
+   </script>
+   </p>
+   
+   
+   <p>
+    <button onclick="t8_toX()">Bottom Middle to O</button>
+   <script>
+     function t8_toX(){
+       document.getElementById("bottommiddle").innerHTML="O"
+     }
+   </script>
+  
+    <button onclick="t8_tox()">Bottom Middle to X</button>
+   <script>
+     function t8_tox(){
+       document.getElementById("bottommiddle").innerHTML="X"
+     }
+   </script>
+   </p>
+   
+   
+   <p>
+   <button onclick="t9_toX()">Bottom Right to X</button>
+   <script>
+     function t9_toX(){
+       document.getElementById("bottomright").innerHTML="X"
+     }
+   </script>
+  
+    <button onclick="t9_tox()">Bottom Right to O</button>
+   <script>
+     function t9_tox(){
+       document.getElementById("bottomright").innerHTML="O"
+     }
+   </script>
+   </p>
    <strong> </strong>
-   <table>
+  
+   <style>
+     button{
+       font-size: 15;
+       color:aqua;
+       background-color:black;
+     }
      
-   <tr>
-     <td> MAGALI</td>
-     <td>SRUITH</td>
-     <td>MANISHA</td>
-     </tr>  
-     <tr>
-       <td>TAKIS</td>
-       <td>BURRITOS</td>
-       <td>PIZZA</td>
-     </tr>
-     
-     </table>
+     table{
+       width:100;
+     }
+   </style>
+   
+   
+   
    
   </body>
   
